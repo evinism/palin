@@ -36,7 +36,7 @@ def brute_force_reversibles(level, num_of_entries = 1000000):
   reversibles = [(joined_to_unjoined[joined], joined_to_unjoined[joined[::-1]]) for joined in joined_set if (joined[::-1] in joined_set)]
   return reversibles
 
-l1_reversibles = brute_force_reversibles(1, 100000)
+l1_reversibles = brute_force_reversibles(1, 10000)
 l2_reversibles = brute_force_reversibles(2, 3000)
 
 reversible_sets = [
